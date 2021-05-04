@@ -10,9 +10,9 @@
 import unittest
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
+class Problem1TestCase(unittest.TestCase):
+    def test_numbers_add_up(self):
+        self.assertEqual(two_numbers_add_up([10, 15, 3, 7], 17), True)
 
 
 if __name__ == '__main__':
