@@ -10,7 +10,7 @@
 #
 # Follow-up: what if you can't use division?
 import unittest
-from problem_2 import list_product, product_array_division
+from problem_2 import list_product, product_array_division, product_array_pop
 
 
 class MyTestCase(unittest.TestCase):
@@ -24,6 +24,10 @@ class MyTestCase(unittest.TestCase):
     def test_product_array_division(self):
         self.assertEqual(product_array_division([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
         self.assertEqual(product_array_division([3, 2, 1]), [2, 3, 6])
+        
+    def test_product_array_pop(self):
+        self.assertEqual(product_array_pop([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
+        self.assertEqual(product_array_pop([3, 2, 1]), [2, 3, 6])
 
 
 if __name__ == '__main__':
