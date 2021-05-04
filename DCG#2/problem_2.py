@@ -16,5 +16,5 @@ def list_product(number_list: list) -> int or float:
     return result
 
 
-def product_array(input_list: list) -> list:
+def product_array_division(input_list: list) -> list:
     pass
