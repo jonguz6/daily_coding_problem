@@ -8,15 +8,15 @@
 #
 # Bonus: Can you do this in one pass?
 import unittest
-from problem_1 import two_numbers_add_up
+from problem_1 import two_numbers_add_up_brute_force
 
 
 class Problem1TestCase(unittest.TestCase):
-    def test_numbers_add_up(self):
-        self.assertEqual(two_numbers_add_up([10, 15, 3, 7], 17), True)
-        self.assertEqual(two_numbers_add_up([6, 7, 18, 9, 4], 21), False)
-        self.assertEqual(two_numbers_add_up([6, 7, 18, 9, 4], 22), True)
-        self.assertEqual(two_numbers_add_up([1, 1, 2, 5, 7, 11, 13], 3), True)
+    def test_numbers_add_up_brute_force(self):
+        self.assertEqual(two_numbers_add_up_brute_force([10, 15, 3, 7], 17), True)
+        self.assertEqual(two_numbers_add_up_brute_force([6, 7, 18, 9, 4], 21), False)
+        self.assertEqual(two_numbers_add_up_brute_force([6, 7, 18, 9, 4], 22), True)
+        self.assertEqual(two_numbers_add_up_brute_force([1, 1, 2, 5, 7, 11, 13], 3), True)
 
 
 if __name__ == '__main__':
