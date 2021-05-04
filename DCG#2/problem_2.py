@@ -9,5 +9,9 @@
 # If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 #
 # Follow-up: what if you can't use division?
+def list_product(number_list: list) -> int or float:
+    pass
+
+
 def product_array(input_list: list) -> list:
     pass

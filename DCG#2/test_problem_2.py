@@ -10,7 +10,7 @@
 #
 # Follow-up: what if you can't use division?
 import unittest
-from problem_2 import product_array
+from problem_2 import list_product, product_array
 
 
 class MyTestCase(unittest.TestCase):
