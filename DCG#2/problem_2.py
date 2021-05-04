@@ -10,7 +10,10 @@
 #
 # Follow-up: what if you can't use division?
 def list_product(number_list: list) -> int or float:
-    pass
+    result = 1
+    for number in number_list:
+        result *= number
+    return result
 
 
 def product_array(input_list: list) -> list:
