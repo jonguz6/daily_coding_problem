@@ -9,15 +9,5 @@
 # If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 #
 # Follow-up: what if you can't use division?
-import unittest
-from problem_2 import product_array
-
-
-class MyTestCase(unittest.TestCase):
-    def test_product_array(self):
-        self.assertEqual(product_array([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
-        self.assertEqual(product_array([3, 2, 1]), [2, 3, 6])
-
-
-if __name__ == '__main__':
-    unittest.main()
+def product_array(input_list: list) -> list:
+    pass
