@@ -8,4 +8,8 @@
 #
 # Bonus: Can you do this in one pass?
 def two_numbers_add_up(number_list: list, k: int) -> bool:
-    pass
+    for idx, number in enumerate(number_list):
+        for item in number_list[idx+1:]:
+            if k - item == number:
+                return True
+    return False
