@@ -22,3 +22,12 @@ def product_array_division(input_list: list) -> list:
     for item in input_list:
         output_list.append(total / item)
     return output_list
+
+
+def product_array_pop(input_list: list) -> list:
+    output_list = []
+    for idx, item in enumerate(input_list):
+        temp_list = input_list.copy()
+        temp_list.pop(idx)
+        output_list.append(list_product(temp_list))
+    return output_list
