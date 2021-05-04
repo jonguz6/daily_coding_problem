@@ -14,6 +14,13 @@ from problem_2 import product_array
 
 
 class MyTestCase(unittest.TestCase):
+    def test_list_product(self):
+        self.assertEqual(list_product([1, 2, 3]), 6)
+        self.assertEqual(list_product([10, 20, 3]), 600)
+        self.assertEqual(list_product([5, 5, 5, 5, 5]), 3125)
+        self.assertEqual(list_product([1, 1, 1, 1, 1]), 1)
+        self.assertEqual(list_product([5, 2.5, 7.3]), 91.25)
+
     def test_product_array(self):
         self.assertEqual(product_array([1, 2, 3, 4, 5]), [120, 60, 40, 30, 24])
         self.assertEqual(product_array([3, 2, 1]), [2, 3, 6])
