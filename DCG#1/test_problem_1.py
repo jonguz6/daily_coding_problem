@@ -14,6 +14,9 @@ from problem_1 import two_numbers_add_up
 class Problem1TestCase(unittest.TestCase):
     def test_numbers_add_up(self):
         self.assertEqual(two_numbers_add_up([10, 15, 3, 7], 17), True)
+        self.assertEqual(two_numbers_add_up([6, 7, 18, 9, 4], 21), False)
+        self.assertEqual(two_numbers_add_up([6, 7, 18, 9, 4], 22), True)
+        self.assertEqual(two_numbers_add_up([1, 1, 2, 5, 7, 11, 13], 3), True)
 
 
 if __name__ == '__main__':
