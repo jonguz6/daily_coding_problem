@@ -13,3 +13,12 @@ def two_numbers_add_up_brute_force(number_list: list, k: int) -> bool:
             if k - item == number:
                 return True
     return False
+
+
+def two_numbers_add_up_set_approach(number_list: list, k: int) -> bool:
+    temp_set = set()
+    for number in number_list:
+        if number in temp_set:
+            return True
+        temp_set.add(k-number)
+    return False
