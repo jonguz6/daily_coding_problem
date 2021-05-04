@@ -17,4 +17,8 @@ def list_product(number_list: list) -> int or float:
 
 
 def product_array_division(input_list: list) -> list:
-    pass
+    total = list_product(input_list)
+    output_list = []
+    for item in input_list:
+        output_list.append(total / item)
+    return output_list
