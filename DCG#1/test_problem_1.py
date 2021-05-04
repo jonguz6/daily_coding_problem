@@ -8,6 +8,7 @@
 #
 # Bonus: Can you do this in one pass?
 import unittest
+from problem_1 import two_numbers_add_up
 
 
 class Problem1TestCase(unittest.TestCase):
